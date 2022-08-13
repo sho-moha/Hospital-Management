@@ -37,7 +37,7 @@ public class LoginDao
 			infoLog.logActivities("in logindao-validate:found= "+"i/p="+l.getPassword()+", db="+temp.getPassword()+", match= "+validUser);
 			if(!validUser)
 			{ 
-				throw new Exception("Password didn't matched"); 
+				throw new Exception("Password didn't match"); 
 			}
 			return temp.getId();
 		}
